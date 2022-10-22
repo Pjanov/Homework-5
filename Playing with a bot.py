@@ -29,7 +29,7 @@ while candies >= take_max:
         if candies <= take_max:
             winner = player_2
             break
-        pl_2 = randint(1, 28)
+        pl_2 = randint(1, take_max)
         print(f'Игрок Bot твой ход: {pl_2} ')
         candies -= pl_2
         print('Осталось:', candies)
@@ -37,7 +37,7 @@ while candies >= take_max:
             winner = player_1
             break
     else:
-        pl_2 = randint(1, 28)
+        pl_2 = randint(1, take_max)
         print(f'Игрок Bot твой ход: {pl_2} ')
         candies -= pl_2
         print('Осталось:', candies)
